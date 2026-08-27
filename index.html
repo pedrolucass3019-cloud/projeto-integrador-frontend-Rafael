@@ -46,6 +46,22 @@
         </section>
 
         <section>
+            <h2>Tour em vídeo pelo catálogo</h2>
+
+            <!--
+                preload="none": o vídeo fica abaixo da dobra da página e é apenas
+                demonstrativo/complementar, não é conteúdo crítico pro primeiro
+                carregamento. Baixar metadata ou o vídeo inteiro de forma automática
+                gastaria banda de quem só quer ler o catálogo de texto.
+            -->
+            <video controls preload="none" poster="assets/images/video-poster.svg" width="640" height="360">
+                <source src="assets/videos/tour-catalogo.webm" type="video/webm">
+                <source src="assets/videos/tour-catalogo.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeo.
+            </video>
+        </section>
+
+        <section>
             <h2>Avalie uma distribuição</h2>
 
             <form>
@@ -78,3 +94,24 @@
                     </p>
 
                     <p>
+                        <label for="comentario">Comentário:</label><br>
+                        <textarea id="comentario" name="comentario"></textarea>
+                    </p>
+
+                    <button type="submit">Enviar avaliação</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://fonts.google.com/specimen/Roboto" target="_blank" rel="noopener noreferrer">
+                Fonte utilizada no projeto: Roboto (Google Fonts)
+            </a>
+        </p>
+    </footer>
+
+</body>
+</html>
