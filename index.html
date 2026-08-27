@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo de Distribuições Linux</title>
+</head>
+<body>
+
+    <header>
+        <h1>Catálogo de Distribuições Linux</h1>
+        <p>Este projeto reúne um catálogo com as principais distribuições Linux, apresentando suas características e finalidades, para ajudar o usuário a escolher a distro mais adequada ao seu uso.</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Distribuições em destaque</h2>
+
+            <ul>
+                <li>Ubuntu</li>
+                <li>Fedora</li>
+                <li>Debian</li>
+                <li>Arch Linux</li>
+            </ul>
+
+            <table border="1">
+                <tr>
+                    <th>Distribuição</th>
+                    <th>Baseada em</th>
+                </tr>
+                <tr>
+                    <td>Ubuntu</td>
+                    <td>Debian</td>
+                </tr>
+                <tr>
+                    <td>Fedora</td>
+                    <td>Red Hat</td>
+                </tr>
+                <tr>
+                    <td>Manjaro</td>
+                    <td>Arch Linux</td>
+                </tr>
+            </table>
+
+            <img src="assets/images/pinguim.png" alt="Tux, o pinguim mascote do Linux">
+        </section>
+
+        <section>
+            <h2>Avalie uma distribuição</h2>
+
+            <form>
+                <fieldset>
+                    <legend>Formulário de avaliação</legend>
+
+                    <p>
+                        <label for="nome">Seu nome:</label><br>
+                        <input type="text" id="nome" name="nome" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Seu e-mail:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+
+                    <p>
+                        <label for="distro">Distribuição avaliada:</label><br>
+                        <select id="distro" name="distro" required>
+                            <option value="ubuntu">Ubuntu</option>
+                            <option value="fedora">Fedora</option>
+                            <option value="debian">Debian</option>
+                            <option value="arch">Arch Linux</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="nota">Nota (0 a 10):</label><br>
+                        <input type="number" id="nota" name="nota" min="0" max="10" required>
+                    </p>
+
+                    <p>
